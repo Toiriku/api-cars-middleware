@@ -31,8 +31,9 @@ const middleware5 = (req, res, next) => {
 };
 
 // Middleware that does not call next
-const middlewareNoNext = (req, res) => {
+const middlewareNoNext = (req, res,next) => {
   console.log("Server is hanging");
+  // next()
   // res.send("This middleware does not call next");
 };
 

@@ -8,6 +8,8 @@ const getAllCars = (req, res) => {
 
 // POST /cars
 const createCar = (req, res) => {
+  console.log("body",req.body);
+  
   const newCar = Car.addOne({ ...req.body }); // Spread the req.body object
 
   if (newCar) {

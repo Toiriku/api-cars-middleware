@@ -9,7 +9,7 @@ const notFound = require("./middleware/notFound");
 app.use(express.json());
 
 app.use(logger);
-
+ 
 app.get("/", middleware1 ,(req, res) => res.send("API Running!"));
 
 // Use the carRouter for all /cars routes

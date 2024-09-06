@@ -7,6 +7,7 @@ const {
   updateCar,
   deleteCar,
 } = require('../controllers/carControllers');
+
 const {
   middleware3,
   middleware4,
@@ -18,6 +19,7 @@ router.use(middleware3);
 
 // GET /cars
 router.get('/', getAllCars);
+
 
 router.use(middleware4);
 
